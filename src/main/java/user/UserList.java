@@ -36,7 +36,7 @@ public class UserList extends HttpServlet { //서블릿으로 동작하기 위�
 
             //사용자 목록 가져오기 SQL 쿼리
             String sql = "SELECT ID, PASSWORD, NAME, EMAIL, PHONE ";
-            sql += "FROM TB_USER "; //의도적으로 띄어쓰기 한칸
+            sql += "FROM WEB_USER "; //의도적으로 띄어쓰기 한칸
             sql += "ORDER BY ID DESC;"; //아이디가 큰 것부터 먼저 출력해라.  SQL 쿼리문은 ;로 끝나니까 마지막에 넣어줬음
             pstmt = conn.prepareStatement(sql);
 

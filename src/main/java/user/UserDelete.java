@@ -34,8 +34,8 @@ public class UserDelete extends HttpServlet { //서블릿으로 동작하기 위
             conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
             state = conn.createStatement();
 
-            String sql; //TB_USER 에서 id 제거
-            sql = "DELETE FROM TB_USER WHERE ID=? LIMIT 1;"; //쿼리문에도 ; 해주기
+            String sql; //WEB_USER 에서 id 제거
+            sql = "DELETE FROM WEB_USER WHERE ID=? LIMIT 1;"; //쿼리문에도 ; 해주기
 
             try {
                 pstmt = conn.prepareStatement(sql);

@@ -1,4 +1,4 @@
-package user; //상옥씨 코드 전부 복붙..ㅠㅠ
+package user;
 
 import org.json.simple.JSONObject;
 
@@ -40,7 +40,7 @@ public class UserCreate extends HttpServlet { //서블릿으로 동작하기 위
             state = conn.createStatement();
 
             String sql;
-            sql = "INSERT INTO TB_USER (ID, PASSWORD, NAME, PHONE, EMAIL)";
+            sql = "INSERT INTO WEB_USER (ID, PASSWORD, NAME, PHONE, EMAIL)";
             sql += "VALUE (?, ?, ?, ?, ?)";
 
             try {

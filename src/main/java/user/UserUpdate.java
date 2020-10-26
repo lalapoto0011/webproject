@@ -37,7 +37,7 @@ public class UserUpdate extends HttpServlet { //서블릿으로 동작하기 위
             conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
             state = conn.createStatement();
 
-            String sql = "UPDATE TB_USER SET NAME=?, PHONE=?, EMAIL=? WHERE ID=? LIMIT 1;";
+            String sql = "UPDATE WEB_USER SET NAME=?, PHONE=?, EMAIL=? WHERE ID=? LIMIT 1;";
 
             try {
                 pstmt = conn.prepareStatement(sql);
