@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="japan_eunyoung@jeongps.com" uuid="457426a5-163c-45e8-aacc-52e621b1a835">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://jeongps.com:3306/japan_eunyoung</jdbc-url>
+    </data-source>
+  </component>
+</project>
