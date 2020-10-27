@@ -17,6 +17,7 @@ if (id == null || !login) {
 }
 %>
 
+<%@ include file="/layout/top.jsp" %>
 	
 <div class="container">
 
@@ -61,7 +62,7 @@ if (id == null || !login) {
 							<input type="password" class="form-control" name="password" placeholder="비밀번호">
 						</div>
 						<div class="form-group">
-							<label>이름</label>
+							<label>이름(닉네임)</label>
 							<input type="text" class="form-control" name="name" placeholder="닉네임">
 						</div>
 						<div class="form-group">
